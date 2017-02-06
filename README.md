@@ -16,13 +16,14 @@ for decoding signals from various scientific and academic sattelites.
 * libvorbis (for ogg vorbis encoder block)
 
 ### Installation
-
-1. `git clone https://github.com/satnogs/gr-satnogs.git`
-2. `cd gr-satnogs`
-3. `mkdir build`
-4. `cmake ..`
-5. `make`
-6. `sudo make install`
+0. `sudo apt-get -t jessie-backports install gnuradio gr-osmosdr`
+1. `sudo apt-get install libvolk-dev libnova-dev libvorbis-dev`
+2. `git clone https://github.com/satnogs/gr-satnogs.git`
+3. `cd gr-satnogs`
+4. `mkdir build`
+5. `cmake ..`
+6. `make`
+7. `sudo make install`
 
 If this is the first time you are building the gr-satnogs module run
 `sudo ldconfig`
